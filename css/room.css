@@ -1,0 +1,103 @@
+:root{
+    --primary-background-color:rgb(247, 237, 220);
+    --primary-color:#858a99;
+    --dark-primary-color:#535455;
+    --letter-spacing: .5px;
+    --yellow-color: #f1b64a;
+    --font-greate-vibes: 'Great Vibes', cursive;
+    --font-crimson-text: 'Crimson Text', serif;
+    --font-poppins-text: poppins;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins-text);
+}
+.Nav{
+    min-height: 180px;
+    width:100%;
+    background:var(--secondary-background-color);
+}
+.contain{
+    min-height: 180px;
+    width:85%;
+    margin:0px auto;
+}
+.Nav .contain h1{
+    font-size:2.2rem;
+    line-height:3rem;
+    padding:2.5rem 3rem 0px; 
+    color:var(--yellow-color);
+}
+.breadcrumb-item{
+    padding-left:2.8rem;
+}
+.breadcrumb-item .anchor{
+    text-decoration:none;
+   
+}
+/*End First Section*/
+
+/*start Second Section*/
+    .sec{
+        width:100%;
+        padding: 3em;
+        background-color: var(--white-color);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .roomdiv{
+        width: 48%;
+        background-color: var(--secondary-background-color);
+        margin-bottom: 3em;
+        display: flex;
+    }
+    .roomdiv .width-part1{
+        width: 40%;
+        overflow: hidden;
+    }
+    .roomdiv .width-part1 img{
+        width: 100%;
+        height: 80%;
+        transition: all .1s;
+    }
+    .roomdiv .width-part1 img:hover{
+        transform: scale(1.1);
+        filter: brightness(50%);
+    }
+    .roomdiv .width-part2{
+        width: 60%;
+        padding: 20px;
+    }
+ .button{
+    padding: 10px 27px;
+    border-radius:10px;
+    text-align: center;
+    text-decoration:none;
+    margin:10px 0px 0px 0px;
+    color:#fff;
+    font-size:1em;
+    font-weight: bold;
+    background-color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+/*End Second Section*/
+@media screen and (max-width:1024px) {
+    .roomdiv{
+        width: 100%;
+    }
+}
+@media screen and (max-width:900px) {
+    .roomdiv{
+        width: 100%;
+        flex-direction: column;
+    }
+    .roomdiv .width-part1{
+        width: 100%;
+    }
+    .roomdiv .width-part2{
+        width: 100%;
+    }
+}

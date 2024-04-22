@@ -1,0 +1,10 @@
+::placeholder{
+  color:#fff;
+}
+.form-group{
+  background-color: var(--secondary-background-color);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(218, 215, 215);
+  padding-inline: 3em;
+  width: 100%;
+}
